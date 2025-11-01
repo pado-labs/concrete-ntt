@@ -19,7 +19,7 @@ pulp = { version = "0.21", default-features = false }
 [features]
 default = ["std"]
 std = ["pulp/std", "aligned-vec/std"]
-nightly = ["pulp/nightly"]
+nightly = ["pulp/nightly", "bytemuck/avx512_simd"]
 
 [dev-dependencies]
 criterion = "0.5"
